@@ -2,10 +2,10 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const { PORT } = process.env;
-const routes = require('./routes/index');
+// const routes = require('./routes/index');
 app.use(express.json());
-app.use('/', routes);
-app.get('/tes',(req,res)=>{
+
+app.get('/',(req,res)=>{
     return res.json({
         status: true,
         message : 'hello',
