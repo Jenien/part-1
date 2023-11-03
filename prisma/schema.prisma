@@ -14,4 +14,14 @@ model User {
   name String
   email String @unique
   password String
+artwork Artwork[]
+}
+model Artwork {
+  id Int      @id @default(autoincrement())
+  fileId String
+  title String
+  description String?
+  url String
+  uploadedBy User @relation(fields: [uploadedById], references: [id])
+  uploadedById Int
 }
