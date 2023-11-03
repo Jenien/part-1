@@ -10,6 +10,6 @@ app.get('/',(req,res)=>{
         status: true,
         message : 'hello',
         error: null
-    })
+    });
 });
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
