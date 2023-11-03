@@ -14,7 +14,7 @@ model User {
   name String
   email String @unique
   password String
-artwork Artwork[]
+  artwork Artwork[]
 }
 model Artwork {
   id Int      @id @default(autoincrement())
