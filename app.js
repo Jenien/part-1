@@ -8,7 +8,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
     return res.json({
       status: true,
-      messages: 'WELCOME TO RAILWAY',
+      messages: 'yayyy',
       err: null,
       data: null,
     });
