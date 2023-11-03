@@ -1,4 +1,4 @@
-POST http://localhost:8090/api/v1/auth/register
+POST http://localhost:9090/api/v1/auth/register
 Content-Type: application/json
 
 {
@@ -8,12 +8,24 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8090/auth/login
+POST http://localhost:9090/api/v1/auth/login
 Content-Type: application/json
 
 {
   "email": "nama1@mail.com",
   "password": "testpassword"
+}
+
+###
+
+PUT http://localhost:9090/api/v1/artwork/upload
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY5OTAxNjEyMH0.rHtpXYX94p-nJpijU-EC5DLWE9MiqY4mmWwMhfuT2y4
+Content-Type: multipart/form-data
+
+{
+  "title": "ok",
+  "description": "testpassword",
+  "image":"-"
 }
 
 
