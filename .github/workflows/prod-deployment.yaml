@@ -29,7 +29,7 @@ jobs:
       #   env:
       #     RAILWAY_TOKEN: ${{secrets.RAILWAY_DEV_TOKEN}}
 
-      - name: Deploy to Railway(develop)
+      - name: Deploy to Railway(production)
         run: railway up --service ${{secrets.RAILWAY_SERVICE_ID}}
         env:
           RAILWAY_TOKEN: ${{secrets.RAILWAY_PROD_TOKEN}}
